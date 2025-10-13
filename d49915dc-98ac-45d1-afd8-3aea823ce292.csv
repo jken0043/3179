@@ -1,0 +1,814 @@
+_id,Year,Month,Month_name,Day_of_week,Day_type,Mode,Pax_daily
+5,2018,1,Jan,Friday,School Holiday Weekday,Tram,529250
+10,2018,1,Jan,Monday,Normal Weekday,Tram,534800
+15,2018,1,Jan,Monday,School Holiday Weekday,Tram,562150
+20,2018,1,Jan,Saturday,Weekend,Tram,393050
+25,2018,1,Jan,Sunday,Weekend,Tram,325900
+30,2018,1,Jan,Thursday,School Holiday Weekday,Tram,563600
+35,2018,1,Jan,Tuesday,Normal Weekday,Tram,610600
+40,2018,1,Jan,Tuesday,School Holiday Weekday,Tram,558300
+45,2018,1,Jan,Wednesday,Normal Weekday,Tram,611100
+50,2018,1,Jan,Wednesday,School Holiday Weekday,Tram,570050
+55,2018,2,Feb,Friday,Normal Weekday,Tram,691500
+60,2018,2,Feb,Monday,Normal Weekday,Tram,657250
+65,2018,2,Feb,Saturday,Weekend,Tram,469550
+70,2018,2,Feb,Sunday,Weekend,Tram,375550
+75,2018,2,Feb,Thursday,Normal Weekday,Tram,672900
+80,2018,2,Feb,Tuesday,Normal Weekday,Tram,686050
+85,2018,2,Feb,Wednesday,Normal Weekday,Tram,692450
+90,2018,3,Mar,Friday,Normal Weekday,Tram,792550
+95,2018,3,Mar,Monday,Normal Weekday,Tram,718900
+100,2018,3,Mar,Saturday,Weekend,Tram,493250
+105,2018,3,Mar,Sunday,Weekend,Tram,377700
+110,2018,3,Mar,Thursday,Normal Weekday,Tram,766750
+115,2018,3,Mar,Tuesday,Normal Weekday,Tram,748800
+120,2018,3,Mar,Wednesday,Normal Weekday,Tram,757900
+125,2018,4,Apr,Friday,Normal Weekday,Tram,731500
+130,2018,4,Apr,Friday,School Holiday Weekday,Tram,652150
+135,2018,4,Apr,Monday,Normal Weekday,Tram,639350
+140,2018,4,Apr,Monday,School Holiday Weekday,Tram,611850
+145,2018,4,Apr,Saturday,Weekend,Tram,457600
+150,2018,4,Apr,Sunday,Weekend,Tram,360450
+155,2018,4,Apr,Thursday,Normal Weekday,Tram,715450
+160,2018,4,Apr,Thursday,School Holiday Weekday,Tram,650600
+165,2018,4,Apr,Tuesday,Normal Weekday,Tram,684300
+170,2018,4,Apr,Tuesday,School Holiday Weekday,Tram,619750
+175,2018,4,Apr,Wednesday,Normal Weekday,Tram,702850
+180,2018,4,Apr,Wednesday,School Holiday Weekday,Tram,646200
+185,2018,5,May,Friday,Normal Weekday,Tram,652250
+190,2018,5,May,Monday,Normal Weekday,Tram,597750
+195,2018,5,May,Saturday,Weekend,Tram,449850
+200,2018,5,May,Sunday,Weekend,Tram,326350
+205,2018,5,May,Thursday,Normal Weekday,Tram,647850
+210,2018,5,May,Tuesday,Normal Weekday,Tram,630450
+215,2018,5,May,Wednesday,Normal Weekday,Tram,639050
+220,2018,6,Jun,Friday,Normal Weekday,Tram,628200
+225,2018,6,Jun,Monday,Normal Weekday,Tram,585250
+230,2018,6,Jun,Saturday,Weekend,Tram,406900
+235,2018,6,Jun,Sunday,Weekend,Tram,294400
+240,2018,6,Jun,Thursday,Normal Weekday,Tram,624850
+245,2018,6,Jun,Tuesday,Normal Weekday,Tram,610350
+250,2018,6,Jun,Wednesday,Normal Weekday,Tram,623650
+255,2018,7,Jul,Friday,Normal Weekday,Tram,685200
+260,2018,7,Jul,Friday,School Holiday Weekday,Tram,634650
+265,2018,7,Jul,Monday,Normal Weekday,Tram,622050
+270,2018,7,Jul,Monday,School Holiday Weekday,Tram,577400
+275,2018,7,Jul,Saturday,Weekend,Tram,424450
+280,2018,7,Jul,Sunday,Weekend,Tram,319650
+285,2018,7,Jul,Thursday,Normal Weekday,Tram,660750
+290,2018,7,Jul,Thursday,School Holiday Weekday,Tram,617200
+295,2018,7,Jul,Tuesday,Normal Weekday,Tram,635850
+300,2018,7,Jul,Tuesday,School Holiday Weekday,Tram,609650
+305,2018,7,Jul,Wednesday,Normal Weekday,Tram,657200
+310,2018,7,Jul,Wednesday,School Holiday Weekday,Tram,607700
+315,2018,8,Aug,Friday,Normal Weekday,Tram,689300
+320,2018,8,Aug,Monday,Normal Weekday,Tram,634900
+325,2018,8,Aug,Saturday,Weekend,Tram,435900
+330,2018,8,Aug,Sunday,Weekend,Tram,338350
+335,2018,8,Aug,Thursday,Normal Weekday,Tram,668700
+340,2018,8,Aug,Tuesday,Normal Weekday,Tram,656900
+345,2018,8,Aug,Wednesday,Normal Weekday,Tram,672250
+350,2018,9,Sep,Friday,Normal Weekday,Tram,653350
+355,2018,9,Sep,Monday,Normal Weekday,Tram,588000
+360,2018,9,Sep,Monday,School Holiday Weekday,Tram,581500
+365,2018,9,Sep,Saturday,Weekend,Tram,423450
+370,2018,9,Sep,Sunday,Weekend,Tram,325150
+375,2018,9,Sep,Thursday,Normal Weekday,Tram,622100
+380,2018,9,Sep,Thursday,School Holiday Weekday,Tram,666100
+385,2018,9,Sep,Tuesday,Normal Weekday,Tram,611650
+390,2018,9,Sep,Tuesday,School Holiday Weekday,Tram,620850
+395,2018,9,Sep,Wednesday,Normal Weekday,Tram,614750
+400,2018,9,Sep,Wednesday,School Holiday Weekday,Tram,643800
+405,2018,10,Oct,Friday,Normal Weekday,Tram,719350
+410,2018,10,Oct,Friday,School Holiday Weekday,Tram,707000
+415,2018,10,Oct,Monday,Normal Weekday,Tram,639150
+420,2018,10,Oct,Monday,School Holiday Weekday,Tram,654500
+425,2018,10,Oct,Saturday,Weekend,Tram,450800
+430,2018,10,Oct,Sunday,Weekend,Tram,338900
+435,2018,10,Oct,Thursday,Normal Weekday,Tram,693550
+440,2018,10,Oct,Thursday,School Holiday Weekday,Tram,684000
+445,2018,10,Oct,Tuesday,Normal Weekday,Tram,652250
+450,2018,10,Oct,Tuesday,School Holiday Weekday,Tram,689600
+455,2018,10,Oct,Wednesday,Normal Weekday,Tram,676550
+460,2018,10,Oct,Wednesday,School Holiday Weekday,Tram,673050
+465,2018,11,Nov,Friday,Normal Weekday,Tram,692300
+470,2018,11,Nov,Monday,Normal Weekday,Tram,634800
+475,2018,11,Nov,Saturday,Weekend,Tram,413500
+480,2018,11,Nov,Sunday,Weekend,Tram,315650
+485,2018,11,Nov,Thursday,Normal Weekday,Tram,696800
+490,2018,11,Nov,Tuesday,Normal Weekday,Tram,667800
+495,2018,11,Nov,Wednesday,Normal Weekday,Tram,688200
+500,2018,12,Dec,Friday,Normal Weekday,Tram,662750
+505,2018,12,Dec,Friday,School Holiday Weekday,Tram,423500
+510,2018,12,Dec,Monday,Normal Weekday,Tram,655150
+515,2018,12,Dec,Monday,School Holiday Weekday,Tram,349950
+520,2018,12,Dec,Saturday,Weekend,Tram,389500
+525,2018,12,Dec,Sunday,Weekend,Tram,301150
+530,2018,12,Dec,Thursday,Normal Weekday,Tram,665400
+535,2018,12,Dec,Thursday,School Holiday Weekday,Tram,385400
+540,2018,12,Dec,Tuesday,Normal Weekday,Tram,688900
+545,2018,12,Dec,Wednesday,Normal Weekday,Tram,692200
+550,2019,1,Jan,Friday,School Holiday Weekday,Tram,546950
+555,2019,1,Jan,Monday,School Holiday Weekday,Tram,583800
+560,2019,1,Jan,Saturday,Weekend,Tram,392950
+565,2019,1,Jan,Sunday,Weekend,Tram,317200
+570,2019,1,Jan,Thursday,Normal Weekday,Tram,655150
+575,2019,1,Jan,Thursday,School Holiday Weekday,Tram,592600
+580,2019,1,Jan,Tuesday,School Holiday Weekday,Tram,604700
+585,2019,1,Jan,Wednesday,Normal Weekday,Tram,592150
+590,2019,1,Jan,Wednesday,School Holiday Weekday,Tram,603250
+595,2019,2,Feb,Friday,Normal Weekday,Tram,665950
+600,2019,2,Feb,Monday,Normal Weekday,Tram,614650
+605,2019,2,Feb,Saturday,Weekend,Tram,492550
+610,2019,2,Feb,Sunday,Weekend,Tram,393300
+615,2019,2,Feb,Thursday,Normal Weekday,Tram,656450
+620,2019,2,Feb,Tuesday,Normal Weekday,Tram,642400
+625,2019,2,Feb,Wednesday,Normal Weekday,Tram,655950
+630,2019,3,Mar,Friday,Normal Weekday,Tram,714200
+635,2019,3,Mar,Monday,Normal Weekday,Tram,675100
+640,2019,3,Mar,Saturday,Weekend,Tram,545100
+645,2019,3,Mar,Sunday,Weekend,Tram,418750
+650,2019,3,Mar,Thursday,Normal Weekday,Tram,721900
+655,2019,3,Mar,Tuesday,Normal Weekday,Tram,700650
+660,2019,3,Mar,Wednesday,Normal Weekday,Tram,713900
+665,2019,4,Apr,Friday,Normal Weekday,Tram,656500
+670,2019,4,Apr,Friday,School Holiday Weekday,Tram,731000
+675,2019,4,Apr,Monday,Normal Weekday,Tram,640150
+680,2019,4,Apr,Monday,School Holiday Weekday,Tram,653500
+685,2019,4,Apr,Saturday,Weekend,Tram,531850
+690,2019,4,Apr,Sunday,Weekend,Tram,393950
+695,2019,4,Apr,Thursday,Normal Weekday,Tram,705850
+700,2019,4,Apr,Thursday,School Holiday Weekday,Tram,703200
+705,2019,4,Apr,Tuesday,Normal Weekday,Tram,642050
+710,2019,4,Apr,Tuesday,School Holiday Weekday,Tram,700100
+715,2019,4,Apr,Wednesday,Normal Weekday,Tram,658600
+720,2019,4,Apr,Wednesday,School Holiday Weekday,Tram,697550
+725,2019,5,May,Friday,Normal Weekday,Tram,673150
+730,2019,5,May,Monday,Normal Weekday,Tram,622150
+735,2019,5,May,Saturday,Weekend,Tram,465700
+740,2019,5,May,Sunday,Weekend,Tram,348400
+745,2019,5,May,Thursday,Normal Weekday,Tram,671950
+750,2019,5,May,Tuesday,Normal Weekday,Tram,652850
+755,2019,5,May,Wednesday,Normal Weekday,Tram,665800
+760,2019,6,Jun,Friday,Normal Weekday,Tram,632350
+765,2019,6,Jun,Monday,Normal Weekday,Tram,582500
+770,2019,6,Jun,Saturday,Weekend,Tram,362800
+775,2019,6,Jun,Sunday,Weekend,Tram,277150
+780,2019,6,Jun,Thursday,Normal Weekday,Tram,615900
+785,2019,6,Jun,Tuesday,Normal Weekday,Tram,605700
+790,2019,6,Jun,Wednesday,Normal Weekday,Tram,605800
+795,2019,7,Jul,Friday,Normal Weekday,Tram,635000
+800,2019,7,Jul,Friday,School Holiday Weekday,Tram,612500
+805,2019,7,Jul,Monday,Normal Weekday,Tram,603600
+810,2019,7,Jul,Monday,School Holiday Weekday,Tram,579950
+815,2019,7,Jul,Saturday,Weekend,Tram,383850
+820,2019,7,Jul,Sunday,Weekend,Tram,277800
+825,2019,7,Jul,Thursday,Normal Weekday,Tram,631850
+830,2019,7,Jul,Thursday,School Holiday Weekday,Tram,604750
+835,2019,7,Jul,Tuesday,Normal Weekday,Tram,623200
+840,2019,7,Jul,Tuesday,School Holiday Weekday,Tram,598950
+845,2019,7,Jul,Wednesday,Normal Weekday,Tram,637650
+850,2019,7,Jul,Wednesday,School Holiday Weekday,Tram,609350
+855,2019,8,Aug,Friday,Normal Weekday,Tram,645150
+860,2019,8,Aug,Monday,Normal Weekday,Tram,638200
+865,2019,8,Aug,Saturday,Weekend,Tram,388350
+870,2019,8,Aug,Sunday,Weekend,Tram,289950
+875,2019,8,Aug,Thursday,Normal Weekday,Tram,677850
+880,2019,8,Aug,Tuesday,Normal Weekday,Tram,659750
+885,2019,8,Aug,Wednesday,Normal Weekday,Tram,667650
+890,2019,9,Sep,Friday,Normal Weekday,Tram,674650
+895,2019,9,Sep,Monday,Normal Weekday,Tram,612000
+900,2019,9,Sep,Monday,School Holiday Weekday,Tram,591050
+905,2019,9,Sep,Saturday,Weekend,Tram,350550
+910,2019,9,Sep,Sunday,Weekend,Tram,268300
+915,2019,9,Sep,Thursday,Normal Weekday,Tram,658350
+920,2019,9,Sep,Thursday,School Holiday Weekday,Tram,471500
+925,2019,9,Sep,Tuesday,Normal Weekday,Tram,642050
+930,2019,9,Sep,Tuesday,School Holiday Weekday,Tram,645950
+935,2019,9,Sep,Wednesday,Normal Weekday,Tram,656500
+940,2019,9,Sep,Wednesday,School Holiday Weekday,Tram,661950
+945,2019,10,Oct,Friday,Normal Weekday,Tram,632900
+950,2019,10,Oct,Friday,School Holiday Weekday,Tram,617750
+955,2019,10,Oct,Monday,Normal Weekday,Tram,588350
+960,2019,10,Oct,Saturday,Weekend,Tram,395100
+965,2019,10,Oct,Sunday,Weekend,Tram,305450
+970,2019,10,Oct,Thursday,Normal Weekday,Tram,617550
+975,2019,10,Oct,Thursday,School Holiday Weekday,Tram,626900
+980,2019,10,Oct,Tuesday,Normal Weekday,Tram,604100
+985,2019,10,Oct,Tuesday,School Holiday Weekday,Tram,610150
+990,2019,10,Oct,Wednesday,Normal Weekday,Tram,624950
+995,2019,10,Oct,Wednesday,School Holiday Weekday,Tram,622000
+1000,2019,11,Nov,Friday,Normal Weekday,Tram,624950
+1005,2019,11,Nov,Monday,Normal Weekday,Tram,554050
+1010,2019,11,Nov,Saturday,Weekend,Tram,400700
+1015,2019,11,Nov,Sunday,Weekend,Tram,312200
+1020,2019,11,Nov,Thursday,Normal Weekday,Tram,558750
+1025,2019,11,Nov,Tuesday,Normal Weekday,Tram,593300
+1030,2019,11,Nov,Wednesday,Normal Weekday,Tram,608650
+1035,2019,12,Dec,Friday,Normal Weekday,Tram,566950
+1040,2019,12,Dec,Friday,School Holiday Weekday,Tram,358900
+1045,2019,12,Dec,Monday,Normal Weekday,Tram,542400
+1050,2019,12,Dec,Monday,School Holiday Weekday,Tram,353250
+1055,2019,12,Dec,Saturday,Weekend,Tram,398950
+1060,2019,12,Dec,Sunday,Weekend,Tram,318150
+1065,2019,12,Dec,Thursday,Normal Weekday,Tram,556700
+1070,2019,12,Dec,Tuesday,Normal Weekday,Tram,589050
+1075,2019,12,Dec,Tuesday,School Holiday Weekday,Tram,316400
+1080,2019,12,Dec,Wednesday,Normal Weekday,Tram,580800
+1085,2020,1,Jan,Friday,Normal Weekday,Tram,459250
+1090,2020,1,Jan,Friday,School Holiday Weekday,Tram,496550
+1095,2020,1,Jan,Monday,School Holiday Weekday,Tram,484100
+1100,2020,1,Jan,Saturday,Weekend,Tram,367500
+1105,2020,1,Jan,Sunday,Weekend,Tram,271600
+1110,2020,1,Jan,Thursday,Normal Weekday,Tram,389050
+1115,2020,1,Jan,Thursday,School Holiday Weekday,Tram,503500
+1120,2020,1,Jan,Tuesday,School Holiday Weekday,Tram,488950
+1125,2020,1,Jan,Wednesday,Normal Weekday,Tram,551000
+1130,2020,1,Jan,Wednesday,School Holiday Weekday,Tram,525250
+1135,2020,2,Feb,Friday,Normal Weekday,Tram,598550
+1140,2020,2,Feb,Monday,Normal Weekday,Tram,523500
+1145,2020,2,Feb,Saturday,Weekend,Tram,392550
+1150,2020,2,Feb,Sunday,Weekend,Tram,328250
+1155,2020,2,Feb,Thursday,Normal Weekday,Tram,556950
+1160,2020,2,Feb,Tuesday,Normal Weekday,Tram,575150
+1165,2020,2,Feb,Wednesday,Normal Weekday,Tram,591100
+1170,2020,3,Mar,Friday,Normal Weekday,Tram,459650
+1175,2020,3,Mar,Friday,School Holiday Weekday,Tram,74850
+1180,2020,3,Mar,Monday,Normal Weekday,Tram,388650
+1185,2020,3,Mar,Monday,School Holiday Weekday,Tram,62300
+1190,2020,3,Mar,Saturday,Weekend,Tram,212100
+1195,2020,3,Mar,Sunday,Weekend,Tram,186150
+1200,2020,3,Mar,Thursday,Normal Weekday,Tram,471750
+1205,2020,3,Mar,Thursday,School Holiday Weekday,Tram,80350
+1210,2020,3,Mar,Tuesday,Normal Weekday,Tram,523300
+1215,2020,3,Mar,Tuesday,School Holiday Weekday,Tram,81500
+1220,2020,3,Mar,Wednesday,Normal Weekday,Tram,502700
+1225,2020,3,Mar,Wednesday,School Holiday Weekday,Tram,89000
+1230,2020,4,Apr,Friday,Normal Weekday,Tram,58150
+1235,2020,4,Apr,Friday,School Holiday Weekday,Tram,60050
+1240,2020,4,Apr,Monday,Normal Weekday,Tram,55250
+1245,2020,4,Apr,Monday,School Holiday Weekday,Tram,50000
+1250,2020,4,Apr,Saturday,Weekend,Tram,31750
+1255,2020,4,Apr,Sunday,Weekend,Tram,24950
+1260,2020,4,Apr,Thursday,Normal Weekday,Tram,59000
+1265,2020,4,Apr,Thursday,School Holiday Weekday,Tram,55650
+1270,2020,4,Apr,Tuesday,Normal Weekday,Tram,58850
+1275,2020,4,Apr,Tuesday,School Holiday Weekday,Tram,51600
+1280,2020,4,Apr,Wednesday,Normal Weekday,Tram,55450
+1285,2020,4,Apr,Wednesday,School Holiday Weekday,Tram,54750
+1290,2020,5,May,Friday,Normal Weekday,Tram,98500
+1295,2020,5,May,Monday,Normal Weekday,Tram,87750
+1300,2020,5,May,Saturday,Weekend,Tram,66850
+1305,2020,5,May,Sunday,Weekend,Tram,50650
+1310,2020,5,May,Thursday,Normal Weekday,Tram,97950
+1315,2020,5,May,Tuesday,Normal Weekday,Tram,94550
+1320,2020,5,May,Wednesday,Normal Weekday,Tram,96600
+1325,2020,6,Jun,Friday,Normal Weekday,Tram,167850
+1330,2020,6,Jun,Monday,Normal Weekday,Tram,135250
+1335,2020,6,Jun,Monday,School Holiday Weekday,Tram,137950
+1340,2020,6,Jun,Saturday,Weekend,Tram,118150
+1345,2020,6,Jun,Sunday,Weekend,Tram,84950
+1350,2020,6,Jun,Thursday,Normal Weekday,Tram,158500
+1355,2020,6,Jun,Tuesday,Normal Weekday,Tram,148050
+1360,2020,6,Jun,Tuesday,School Holiday Weekday,Tram,139450
+1365,2020,6,Jun,Wednesday,Normal Weekday,Tram,153450
+1370,2020,7,Jul,Friday,Normal Weekday,Tram,76900
+1375,2020,7,Jul,Friday,School Holiday Weekday,Tram,106250
+1380,2020,7,Jul,Monday,Normal Weekday,Tram,73800
+1385,2020,7,Jul,Monday,School Holiday Weekday,Tram,115700
+1390,2020,7,Jul,Saturday,Weekend,Tram,57500
+1395,2020,7,Jul,Sunday,Weekend,Tram,41150
+1400,2020,7,Jul,Thursday,Normal Weekday,Tram,77400
+1405,2020,7,Jul,Thursday,School Holiday Weekday,Tram,110000
+1410,2020,7,Jul,Tuesday,Normal Weekday,Tram,78700
+1415,2020,7,Jul,Tuesday,School Holiday Weekday,Tram,122550
+1420,2020,7,Jul,Wednesday,Normal Weekday,Tram,78800
+1425,2020,7,Jul,Wednesday,School Holiday Weekday,Tram,141400
+1430,2020,8,Aug,Friday,Normal Weekday,Tram,43950
+1435,2020,8,Aug,Monday,Normal Weekday,Tram,45500
+1440,2020,8,Aug,Saturday,Weekend,Tram,30600
+1445,2020,8,Aug,Sunday,Weekend,Tram,22750
+1450,2020,8,Aug,Thursday,Normal Weekday,Tram,44400
+1455,2020,8,Aug,Tuesday,Normal Weekday,Tram,46600
+1460,2020,8,Aug,Wednesday,Normal Weekday,Tram,47450
+1465,2020,9,Sep,Friday,Normal Weekday,Tram,45600
+1470,2020,9,Sep,Friday,School Holiday Weekday,Tram,44850
+1475,2020,9,Sep,Monday,Normal Weekday,Tram,41550
+1480,2020,9,Sep,Monday,School Holiday Weekday,Tram,46250
+1485,2020,9,Sep,Saturday,Weekend,Tram,35400
+1490,2020,9,Sep,Sunday,Weekend,Tram,29600
+1495,2020,9,Sep,Thursday,Normal Weekday,Tram,43750
+1500,2020,9,Sep,Thursday,School Holiday Weekday,Tram,46550
+1505,2020,9,Sep,Tuesday,Normal Weekday,Tram,42250
+1510,2020,9,Sep,Tuesday,School Holiday Weekday,Tram,49450
+1515,2020,9,Sep,Wednesday,Normal Weekday,Tram,43250
+1520,2020,9,Sep,Wednesday,School Holiday Weekday,Tram,47750
+1525,2020,10,Oct,Friday,Normal Weekday,Tram,79250
+1530,2020,10,Oct,Friday,School Holiday Weekday,Tram,56050
+1535,2020,10,Oct,Monday,Normal Weekday,Tram,62350
+1540,2020,10,Oct,Saturday,Weekend,Tram,82000
+1545,2020,10,Oct,Sunday,Weekend,Tram,47550
+1550,2020,10,Oct,Thursday,Normal Weekday,Tram,74950
+1555,2020,10,Oct,Thursday,School Holiday Weekday,Tram,53200
+1560,2020,10,Oct,Tuesday,Normal Weekday,Tram,66250
+1565,2020,10,Oct,Wednesday,Normal Weekday,Tram,75000
+1570,2020,11,Nov,Friday,Normal Weekday,Tram,179900
+1575,2020,11,Nov,Monday,Normal Weekday,Tram,147650
+1580,2020,11,Nov,Saturday,Weekend,Tram,167950
+1585,2020,11,Nov,Sunday,Weekend,Tram,108850
+1590,2020,11,Nov,Thursday,Normal Weekday,Tram,162950
+1595,2020,11,Nov,Tuesday,Normal Weekday,Tram,158350
+1600,2020,11,Nov,Wednesday,Normal Weekday,Tram,153250
+1605,2020,12,Dec,Friday,Normal Weekday,Tram,271850
+1610,2020,12,Dec,Monday,Normal Weekday,Tram,198500
+1615,2020,12,Dec,Monday,School Holiday Weekday,Tram,216650
+1620,2020,12,Dec,Saturday,Weekend,Tram,190100
+1625,2020,12,Dec,Sunday,Weekend,Tram,131350
+1630,2020,12,Dec,Thursday,Normal Weekday,Tram,244250
+1635,2020,12,Dec,Thursday,School Holiday Weekday,Tram,151850
+1640,2020,12,Dec,Tuesday,Normal Weekday,Tram,211200
+1645,2020,12,Dec,Tuesday,School Holiday Weekday,Tram,197700
+1650,2020,12,Dec,Wednesday,Normal Weekday,Tram,237000
+1655,2020,12,Dec,Wednesday,School Holiday Weekday,Tram,207200
+1660,2021,1,Jan,Friday,Normal Weekday,Tram,232100
+1665,2021,1,Jan,Friday,School Holiday Weekday,Tram,222250
+1670,2021,1,Jan,Monday,School Holiday Weekday,Tram,168150
+1675,2021,1,Jan,Saturday,Weekend,Tram,166500
+1680,2021,1,Jan,Sunday,Weekend,Tram,122100
+1685,2021,1,Jan,Thursday,Normal Weekday,Tram,268350
+1690,2021,1,Jan,Thursday,School Holiday Weekday,Tram,209300
+1695,2021,1,Jan,Tuesday,School Holiday Weekday,Tram,196200
+1700,2021,1,Jan,Wednesday,School Holiday Weekday,Tram,218700
+1705,2021,2,Feb,Friday,Normal Weekday,Tram,270150
+1710,2021,2,Feb,Monday,Normal Weekday,Tram,201950
+1715,2021,2,Feb,Saturday,Weekend,Tram,170250
+1720,2021,2,Feb,Sunday,Weekend,Tram,120550
+1725,2021,2,Feb,Thursday,Normal Weekday,Tram,265500
+1730,2021,2,Feb,Tuesday,Normal Weekday,Tram,213950
+1735,2021,2,Feb,Wednesday,Normal Weekday,Tram,228200
+1740,2021,3,Mar,Friday,Normal Weekday,Tram,329450
+1745,2021,3,Mar,Monday,Normal Weekday,Tram,288500
+1750,2021,3,Mar,Saturday,Weekend,Tram,241500
+1755,2021,3,Mar,Sunday,Weekend,Tram,178350
+1760,2021,3,Mar,Thursday,Normal Weekday,Tram,324600
+1765,2021,3,Mar,Tuesday,Normal Weekday,Tram,308200
+1770,2021,3,Mar,Wednesday,Normal Weekday,Tram,325200
+1775,2021,4,Apr,Friday,Normal Weekday,Tram,375200
+1780,2021,4,Apr,Friday,School Holiday Weekday,Tram,362350
+1785,2021,4,Apr,Monday,Normal Weekday,Tram,312100
+1790,2021,4,Apr,Monday,School Holiday Weekday,Tram,316000
+1795,2021,4,Apr,Saturday,Weekend,Tram,269700
+1800,2021,4,Apr,Sunday,Weekend,Tram,185250
+1805,2021,4,Apr,Thursday,Normal Weekday,Tram,367050
+1810,2021,4,Apr,Thursday,School Holiday Weekday,Tram,365900
+1815,2021,4,Apr,Tuesday,Normal Weekday,Tram,341250
+1820,2021,4,Apr,Tuesday,School Holiday Weekday,Tram,327700
+1825,2021,4,Apr,Wednesday,Normal Weekday,Tram,374100
+1830,2021,4,Apr,Wednesday,School Holiday Weekday,Tram,354700
+1835,2021,5,May,Friday,Normal Weekday,Tram,296100
+1840,2021,5,May,Monday,Normal Weekday,Tram,268650
+1845,2021,5,May,Saturday,Weekend,Tram,248000
+1850,2021,5,May,Sunday,Weekend,Tram,176700
+1855,2021,5,May,Thursday,Normal Weekday,Tram,335900
+1860,2021,5,May,Tuesday,Normal Weekday,Tram,345800
+1865,2021,5,May,Wednesday,Normal Weekday,Tram,345850
+1870,2021,6,Jun,Friday,Normal Weekday,Tram,176300
+1875,2021,6,Jun,Monday,Normal Weekday,Tram,140450
+1880,2021,6,Jun,Monday,School Holiday Weekday,Tram,211550
+1885,2021,6,Jun,Saturday,Weekend,Tram,160200
+1890,2021,6,Jun,Sunday,Weekend,Tram,115300
+1895,2021,6,Jun,Thursday,Normal Weekday,Tram,145050
+1900,2021,6,Jun,Tuesday,Normal Weekday,Tram,138950
+1905,2021,6,Jun,Tuesday,School Holiday Weekday,Tram,230300
+1910,2021,6,Jun,Wednesday,Normal Weekday,Tram,137550
+1915,2021,6,Jun,Wednesday,School Holiday Weekday,Tram,241050
+1920,2021,7,Jul,Friday,Normal Weekday,Tram,121250
+1925,2021,7,Jul,Friday,School Holiday Weekday,Tram,254150
+1930,2021,7,Jul,Monday,Normal Weekday,Tram,129450
+1935,2021,7,Jul,Monday,School Holiday Weekday,Tram,213900
+1940,2021,7,Jul,Saturday,Weekend,Tram,147950
+1945,2021,7,Jul,Sunday,Weekend,Tram,97650
+1950,2021,7,Jul,Thursday,Normal Weekday,Tram,179400
+1955,2021,7,Jul,Thursday,School Holiday Weekday,Tram,249950
+1960,2021,7,Jul,Tuesday,Normal Weekday,Tram,142950
+1965,2021,7,Jul,Tuesday,School Holiday Weekday,Tram,238350
+1970,2021,7,Jul,Wednesday,Normal Weekday,Tram,177400
+1975,2021,7,Jul,Wednesday,School Holiday Weekday,Tram,251850
+1980,2021,8,Aug,Friday,Normal Weekday,Tram,72800
+1985,2021,8,Aug,Monday,Normal Weekday,Tram,97350
+1990,2021,8,Aug,Saturday,Weekend,Tram,51050
+1995,2021,8,Aug,Sunday,Weekend,Tram,60700
+2000,2021,8,Aug,Thursday,Normal Weekday,Tram,110100
+2005,2021,8,Aug,Tuesday,Normal Weekday,Tram,102200
+2010,2021,8,Aug,Wednesday,Normal Weekday,Tram,112300
+2015,2021,9,Sep,Friday,Normal Weekday,Tram,72400
+2020,2021,9,Sep,Monday,Normal Weekday,Tram,68950
+2025,2021,9,Sep,Monday,School Holiday Weekday,Tram,72050
+2030,2021,9,Sep,Saturday,Weekend,Tram,43800
+2035,2021,9,Sep,Sunday,Weekend,Tram,41000
+2040,2021,9,Sep,Thursday,Normal Weekday,Tram,74450
+2045,2021,9,Sep,Thursday,School Holiday Weekday,Tram,76300
+2050,2021,9,Sep,Tuesday,Normal Weekday,Tram,70050
+2055,2021,9,Sep,Tuesday,School Holiday Weekday,Tram,74250
+2060,2021,9,Sep,Wednesday,Normal Weekday,Tram,74450
+2065,2021,9,Sep,Wednesday,School Holiday Weekday,Tram,68300
+2070,2021,10,Oct,Friday,Normal Weekday,Tram,129200
+2075,2021,10,Oct,Friday,School Holiday Weekday,Tram,77100
+2080,2021,10,Oct,Monday,Normal Weekday,Tram,92800
+2085,2021,10,Oct,Saturday,Weekend,Tram,95550
+2090,2021,10,Oct,Sunday,Weekend,Tram,73500
+2095,2021,10,Oct,Thursday,Normal Weekday,Tram,108050
+2100,2021,10,Oct,Tuesday,Normal Weekday,Tram,104450
+2105,2021,10,Oct,Wednesday,Normal Weekday,Tram,110600
+2110,2021,11,Nov,Friday,Normal Weekday,Tram,286100
+2115,2021,11,Nov,Monday,Normal Weekday,Tram,232600
+2120,2021,11,Nov,Saturday,Weekend,Tram,203600
+2125,2021,11,Nov,Sunday,Weekend,Tram,154700
+2130,2021,11,Nov,Thursday,Normal Weekday,Tram,268800
+2135,2021,11,Nov,Tuesday,Normal Weekday,Tram,273650
+2140,2021,11,Nov,Wednesday,Normal Weekday,Tram,252450
+2145,2021,12,Dec,Friday,Normal Weekday,Tram,393450
+2150,2021,12,Dec,Friday,School Holiday Weekday,Tram,168650
+2155,2021,12,Dec,Monday,Normal Weekday,Tram,300950
+2160,2021,12,Dec,Monday,School Holiday Weekday,Tram,303000
+2165,2021,12,Dec,Saturday,Weekend,Tram,264300
+2170,2021,12,Dec,Sunday,Weekend,Tram,197750
+2175,2021,12,Dec,Thursday,Normal Weekday,Tram,346000
+2180,2021,12,Dec,Thursday,School Holiday Weekday,Tram,242500
+2185,2021,12,Dec,Tuesday,Normal Weekday,Tram,322950
+2190,2021,12,Dec,Tuesday,School Holiday Weekday,Tram,319550
+2195,2021,12,Dec,Wednesday,Normal Weekday,Tram,337650
+2200,2021,12,Dec,Wednesday,School Holiday Weekday,Tram,265850
+2205,2022,1,Jan,Friday,School Holiday Weekday,Tram,199400
+2210,2022,1,Jan,Monday,Normal Weekday,Tram,224100
+2215,2022,1,Jan,Monday,School Holiday Weekday,Tram,184000
+2220,2022,1,Jan,Saturday,Weekend,Tram,163650
+2225,2022,1,Jan,Sunday,Weekend,Tram,125400
+2230,2022,1,Jan,Thursday,School Holiday Weekday,Tram,199250
+2235,2022,1,Jan,Tuesday,School Holiday Weekday,Tram,199300
+2240,2022,1,Jan,Wednesday,School Holiday Weekday,Tram,193700
+2245,2022,2,Feb,Friday,Normal Weekday,Tram,331800
+2250,2022,2,Feb,Monday,Normal Weekday,Tram,301600
+2255,2022,2,Feb,Saturday,Weekend,Tram,262550
+2260,2022,2,Feb,Sunday,Weekend,Tram,185850
+2265,2022,2,Feb,Thursday,Normal Weekday,Tram,309700
+2270,2022,2,Feb,Tuesday,Normal Weekday,Tram,293850
+2275,2022,2,Feb,Wednesday,Normal Weekday,Tram,305150
+2280,2022,3,Mar,Friday,Normal Weekday,Tram,414100
+2285,2022,3,Mar,Monday,Normal Weekday,Tram,362900
+2290,2022,3,Mar,Saturday,Weekend,Tram,333500
+2295,2022,3,Mar,Sunday,Weekend,Tram,244000
+2300,2022,3,Mar,Thursday,Normal Weekday,Tram,432450
+2305,2022,3,Mar,Tuesday,Normal Weekday,Tram,404350
+2310,2022,3,Mar,Wednesday,Normal Weekday,Tram,427650
+2315,2022,4,Apr,Friday,Normal Weekday,Tram,404700
+2320,2022,4,Apr,Friday,School Holiday Weekday,Tram,347550
+2325,2022,4,Apr,Monday,Normal Weekday,Tram,350250
+2330,2022,4,Apr,Monday,School Holiday Weekday,Tram,350050
+2335,2022,4,Apr,Saturday,Weekend,Tram,337050
+2340,2022,4,Apr,Sunday,Weekend,Tram,257900
+2345,2022,4,Apr,Thursday,Normal Weekday,Tram,395400
+2350,2022,4,Apr,Thursday,School Holiday Weekday,Tram,368700
+2355,2022,4,Apr,Tuesday,Normal Weekday,Tram,382800
+2360,2022,4,Apr,Tuesday,School Holiday Weekday,Tram,343450
+2365,2022,4,Apr,Wednesday,Normal Weekday,Tram,400350
+2370,2022,4,Apr,Wednesday,School Holiday Weekday,Tram,374100
+2375,2022,5,May,Friday,Normal Weekday,Tram,361050
+2380,2022,5,May,Monday,Normal Weekday,Tram,309700
+2385,2022,5,May,Saturday,Weekend,Tram,316500
+2390,2022,5,May,Sunday,Weekend,Tram,234100
+2395,2022,5,May,Thursday,Normal Weekday,Tram,368550
+2400,2022,5,May,Tuesday,Normal Weekday,Tram,353200
+2405,2022,5,May,Wednesday,Normal Weekday,Tram,370350
+2410,2022,6,Jun,Friday,Normal Weekday,Tram,360450
+2415,2022,6,Jun,Monday,Normal Weekday,Tram,303900
+2420,2022,6,Jun,Monday,School Holiday Weekday,Tram,316350
+2425,2022,6,Jun,Saturday,Weekend,Tram,318150
+2430,2022,6,Jun,Sunday,Weekend,Tram,218200
+2435,2022,6,Jun,Thursday,Normal Weekday,Tram,354000
+2440,2022,6,Jun,Thursday,School Holiday Weekday,Tram,381650
+2445,2022,6,Jun,Tuesday,Normal Weekday,Tram,335950
+2450,2022,6,Jun,Tuesday,School Holiday Weekday,Tram,353950
+2455,2022,6,Jun,Wednesday,Normal Weekday,Tram,337800
+2460,2022,6,Jun,Wednesday,School Holiday Weekday,Tram,376450
+2465,2022,7,Jul,Friday,Normal Weekday,Tram,410250
+2470,2022,7,Jul,Friday,School Holiday Weekday,Tram,365550
+2475,2022,7,Jul,Monday,Normal Weekday,Tram,350900
+2480,2022,7,Jul,Monday,School Holiday Weekday,Tram,332350
+2485,2022,7,Jul,Saturday,Weekend,Tram,342900
+2490,2022,7,Jul,Sunday,Weekend,Tram,269450
+2495,2022,7,Jul,Thursday,Normal Weekday,Tram,405400
+2500,2022,7,Jul,Thursday,School Holiday Weekday,Tram,375350
+2505,2022,7,Jul,Tuesday,Normal Weekday,Tram,388600
+2510,2022,7,Jul,Tuesday,School Holiday Weekday,Tram,371900
+2515,2022,7,Jul,Wednesday,Normal Weekday,Tram,400300
+2520,2022,7,Jul,Wednesday,School Holiday Weekday,Tram,390550
+2525,2022,8,Aug,Friday,Normal Weekday,Tram,436450
+2530,2022,8,Aug,Monday,Normal Weekday,Tram,374500
+2535,2022,8,Aug,Saturday,Weekend,Tram,383300
+2540,2022,8,Aug,Sunday,Weekend,Tram,299150
+2545,2022,8,Aug,Thursday,Normal Weekday,Tram,432500
+2550,2022,8,Aug,Tuesday,Normal Weekday,Tram,420800
+2555,2022,8,Aug,Wednesday,Normal Weekday,Tram,435800
+2560,2022,9,Sep,Friday,Normal Weekday,Tram,456250
+2565,2022,9,Sep,Friday,School Holiday Weekday,Tram,439250
+2570,2022,9,Sep,Monday,Normal Weekday,Tram,395950
+2575,2022,9,Sep,Monday,School Holiday Weekday,Tram,383600
+2580,2022,9,Sep,Saturday,Weekend,Tram,357350
+2585,2022,9,Sep,Sunday,Weekend,Tram,259000
+2590,2022,9,Sep,Thursday,Normal Weekday,Tram,458950
+2595,2022,9,Sep,Thursday,School Holiday Weekday,Tram,448400
+2600,2022,9,Sep,Tuesday,Normal Weekday,Tram,441000
+2605,2022,9,Sep,Tuesday,School Holiday Weekday,Tram,429400
+2610,2022,9,Sep,Wednesday,Normal Weekday,Tram,456900
+2615,2022,9,Sep,Wednesday,School Holiday Weekday,Tram,450250
+2620,2022,10,Oct,Friday,Normal Weekday,Tram,432200
+2625,2022,10,Oct,Monday,Normal Weekday,Tram,387450
+2630,2022,10,Oct,Saturday,Weekend,Tram,348650
+2635,2022,10,Oct,Sunday,Weekend,Tram,264450
+2640,2022,10,Oct,Thursday,Normal Weekday,Tram,439200
+2645,2022,10,Oct,Tuesday,Normal Weekday,Tram,450150
+2650,2022,10,Oct,Wednesday,Normal Weekday,Tram,447800
+2655,2022,11,Nov,Friday,Normal Weekday,Tram,479000
+2660,2022,11,Nov,Monday,Normal Weekday,Tram,397800
+2665,2022,11,Nov,Saturday,Weekend,Tram,353050
+2670,2022,11,Nov,Sunday,Weekend,Tram,255200
+2675,2022,11,Nov,Thursday,Normal Weekday,Tram,470400
+2680,2022,11,Nov,Tuesday,Normal Weekday,Tram,451350
+2685,2022,11,Nov,Wednesday,Normal Weekday,Tram,462250
+2690,2022,12,Dec,Friday,Normal Weekday,Tram,462500
+2695,2022,12,Dec,Friday,School Holiday Weekday,Tram,362800
+2700,2022,12,Dec,Monday,Normal Weekday,Tram,378600
+2705,2022,12,Dec,Saturday,Weekend,Tram,302500
+2710,2022,12,Dec,Sunday,Weekend,Tram,248700
+2715,2022,12,Dec,Thursday,Normal Weekday,Tram,446500
+2720,2022,12,Dec,Thursday,School Holiday Weekday,Tram,375450
+2725,2022,12,Dec,Tuesday,Normal Weekday,Tram,425550
+2730,2022,12,Dec,Wednesday,Normal Weekday,Tram,424500
+2735,2022,12,Dec,Wednesday,School Holiday Weekday,Tram,368000
+2740,2023,1,Jan,Friday,School Holiday Weekday,Tram,452650
+2745,2023,1,Jan,Monday,Normal Weekday,Tram,416400
+2750,2023,1,Jan,Monday,School Holiday Weekday,Tram,430000
+2755,2023,1,Jan,Saturday,Weekend,Tram,358500
+2760,2023,1,Jan,Sunday,Weekend,Tram,287100
+2765,2023,1,Jan,Thursday,School Holiday Weekday,Tram,471300
+2770,2023,1,Jan,Tuesday,Normal Weekday,Tram,473800
+2775,2023,1,Jan,Tuesday,School Holiday Weekday,Tram,440750
+2780,2023,1,Jan,Wednesday,School Holiday Weekday,Tram,464400
+2785,2023,2,Feb,Friday,Normal Weekday,Tram,481750
+2790,2023,2,Feb,Monday,Normal Weekday,Tram,467850
+2795,2023,2,Feb,Saturday,Weekend,Tram,420400
+2800,2023,2,Feb,Sunday,Weekend,Tram,327350
+2805,2023,2,Feb,Thursday,Normal Weekday,Tram,493500
+2810,2023,2,Feb,Tuesday,Normal Weekday,Tram,521150
+2815,2023,2,Feb,Wednesday,Normal Weekday,Tram,511650
+2820,2023,3,Mar,Friday,Normal Weekday,Tram,537150
+2825,2023,3,Mar,Monday,Normal Weekday,Tram,483550
+2830,2023,3,Mar,Saturday,Weekend,Tram,445950
+2835,2023,3,Mar,Sunday,Weekend,Tram,334000
+2840,2023,3,Mar,Thursday,Normal Weekday,Tram,558500
+2845,2023,3,Mar,Tuesday,Normal Weekday,Tram,535200
+2850,2023,3,Mar,Wednesday,Normal Weekday,Tram,554100
+2855,2023,4,Apr,Friday,Normal Weekday,Tram,453900
+2860,2023,4,Apr,Friday,School Holiday Weekday,Tram,476300
+2865,2023,4,Apr,Monday,Normal Weekday,Tram,458100
+2870,2023,4,Apr,Monday,School Holiday Weekday,Tram,423250
+2875,2023,4,Apr,Saturday,Weekend,Tram,409100
+2880,2023,4,Apr,Sunday,Weekend,Tram,314700
+2885,2023,4,Apr,Thursday,Normal Weekday,Tram,495000
+2890,2023,4,Apr,Thursday,School Holiday Weekday,Tram,490050
+2895,2023,4,Apr,Tuesday,Normal Weekday,Tram,511850
+2900,2023,4,Apr,Tuesday,School Holiday Weekday,Tram,463700
+2905,2023,4,Apr,Wednesday,Normal Weekday,Tram,506800
+2910,2023,4,Apr,Wednesday,School Holiday Weekday,Tram,466900
+2915,2023,5,May,Friday,Normal Weekday,Tram,440900
+2920,2023,5,May,Monday,Normal Weekday,Tram,393300
+2925,2023,5,May,Saturday,Weekend,Tram,406150
+2930,2023,5,May,Sunday,Weekend,Tram,298300
+2935,2023,5,May,Thursday,Normal Weekday,Tram,458150
+2940,2023,5,May,Tuesday,Normal Weekday,Tram,432500
+2945,2023,5,May,Wednesday,Normal Weekday,Tram,443500
+2950,2023,6,Jun,Friday,Normal Weekday,Tram,407050
+2955,2023,6,Jun,Friday,School Holiday Weekday,Tram,414500
+2960,2023,6,Jun,Monday,Normal Weekday,Tram,352100
+2965,2023,6,Jun,Monday,School Holiday Weekday,Tram,356850
+2970,2023,6,Jun,Saturday,Weekend,Tram,412900
+2975,2023,6,Jun,Sunday,Weekend,Tram,318450
+2980,2023,6,Jun,Thursday,Normal Weekday,Tram,415900
+2985,2023,6,Jun,Thursday,School Holiday Weekday,Tram,417500
+2990,2023,6,Jun,Tuesday,Normal Weekday,Tram,402700
+2995,2023,6,Jun,Tuesday,School Holiday Weekday,Tram,400100
+3000,2023,6,Jun,Wednesday,Normal Weekday,Tram,406950
+3005,2023,6,Jun,Wednesday,School Holiday Weekday,Tram,395900
+3010,2023,7,Jul,Friday,Normal Weekday,Tram,443250
+3015,2023,7,Jul,Friday,School Holiday Weekday,Tram,384150
+3020,2023,7,Jul,Monday,Normal Weekday,Tram,389350
+3025,2023,7,Jul,Monday,School Holiday Weekday,Tram,356650
+3030,2023,7,Jul,Saturday,Weekend,Tram,421350
+3035,2023,7,Jul,Sunday,Weekend,Tram,310050
+3040,2023,7,Jul,Thursday,Normal Weekday,Tram,430450
+3045,2023,7,Jul,Thursday,School Holiday Weekday,Tram,411950
+3050,2023,7,Jul,Tuesday,Normal Weekday,Tram,410900
+3055,2023,7,Jul,Tuesday,School Holiday Weekday,Tram,383350
+3060,2023,7,Jul,Wednesday,Normal Weekday,Tram,439000
+3065,2023,7,Jul,Wednesday,School Holiday Weekday,Tram,413800
+3070,2023,8,Aug,Friday,Normal Weekday,Tram,447250
+3075,2023,8,Aug,Monday,Normal Weekday,Tram,403750
+3080,2023,8,Aug,Saturday,Weekend,Tram,425750
+3085,2023,8,Aug,Sunday,Weekend,Tram,336450
+3090,2023,8,Aug,Thursday,Normal Weekday,Tram,459800
+3095,2023,8,Aug,Tuesday,Normal Weekday,Tram,446250
+3100,2023,8,Aug,Wednesday,Normal Weekday,Tram,459500
+3105,2023,9,Sep,Friday,Normal Weekday,Tram,408900
+3110,2023,9,Sep,Friday,School Holiday Weekday,Tram,464150
+3115,2023,9,Sep,Monday,Normal Weekday,Tram,373600
+3120,2023,9,Sep,Monday,School Holiday Weekday,Tram,410000
+3125,2023,9,Sep,Saturday,Weekend,Tram,395400
+3130,2023,9,Sep,Sunday,Weekend,Tram,309450
+3135,2023,9,Sep,Thursday,Normal Weekday,Tram,439500
+3140,2023,9,Sep,Thursday,School Holiday Weekday,Tram,475550
+3145,2023,9,Sep,Tuesday,Normal Weekday,Tram,420050
+3150,2023,9,Sep,Tuesday,School Holiday Weekday,Tram,447900
+3155,2023,9,Sep,Wednesday,Normal Weekday,Tram,432250
+3160,2023,9,Sep,Wednesday,School Holiday Weekday,Tram,454650
+3165,2023,10,Oct,Friday,Normal Weekday,Tram,446350
+3170,2023,10,Oct,Monday,Normal Weekday,Tram,390800
+3175,2023,10,Oct,Saturday,Weekend,Tram,399550
+3180,2023,10,Oct,Sunday,Weekend,Tram,271900
+3185,2023,10,Oct,Thursday,Normal Weekday,Tram,452700
+3190,2023,10,Oct,Tuesday,Normal Weekday,Tram,429350
+3195,2023,10,Oct,Wednesday,Normal Weekday,Tram,449700
+3200,2023,11,Nov,Friday,Normal Weekday,Tram,468150
+3205,2023,11,Nov,Monday,Normal Weekday,Tram,415900
+3210,2023,11,Nov,Saturday,Weekend,Tram,358900
+3215,2023,11,Nov,Sunday,Weekend,Tram,260350
+3220,2023,11,Nov,Thursday,Normal Weekday,Tram,491600
+3225,2023,11,Nov,Tuesday,Normal Weekday,Tram,485650
+3230,2023,11,Nov,Wednesday,Normal Weekday,Tram,469200
+3235,2023,12,Dec,Friday,Normal Weekday,Tram,525000
+3240,2023,12,Dec,Friday,School Holiday Weekday,Tram,407200
+3245,2023,12,Dec,Monday,Normal Weekday,Tram,451400
+3250,2023,12,Dec,Saturday,Weekend,Tram,312550
+3255,2023,12,Dec,Sunday,Weekend,Tram,242350
+3260,2023,12,Dec,Thursday,Normal Weekday,Tram,555950
+3265,2023,12,Dec,Thursday,School Holiday Weekday,Tram,416250
+3270,2023,12,Dec,Tuesday,Normal Weekday,Tram,512950
+3275,2023,12,Dec,Wednesday,Normal Weekday,Tram,525200
+3280,2023,12,Dec,Wednesday,School Holiday Weekday,Tram,336200
+3285,2024,1,Jan,Friday,School Holiday Weekday,Tram,420900
+3290,2024,1,Jan,Monday,School Holiday Weekday,Tram,414600
+3295,2024,1,Jan,Saturday,Weekend,Tram,332600
+3300,2024,1,Jan,Sunday,Weekend,Tram,242700
+3305,2024,1,Jan,Thursday,School Holiday Weekday,Tram,447950
+3310,2024,1,Jan,Tuesday,Normal Weekday,Tram,480200
+3315,2024,1,Jan,Tuesday,School Holiday Weekday,Tram,421150
+3320,2024,1,Jan,Wednesday,Normal Weekday,Tram,500800
+3325,2024,1,Jan,Wednesday,School Holiday Weekday,Tram,421200
+3330,2024,2,Feb,Friday,Normal Weekday,Tram,498700
+3335,2024,2,Feb,Monday,Normal Weekday,Tram,461350
+3340,2024,2,Feb,Saturday,Weekend,Tram,428350
+3345,2024,2,Feb,Sunday,Weekend,Tram,304600
+3350,2024,2,Feb,Thursday,Normal Weekday,Tram,515150
+3355,2024,2,Feb,Tuesday,Normal Weekday,Tram,505750
+3360,2024,2,Feb,Wednesday,Normal Weekday,Tram,514100
+3365,2024,3,Mar,Friday,Normal Weekday,Tram,545000
+3370,2024,3,Mar,Monday,Normal Weekday,Tram,516850
+3375,2024,3,Mar,Saturday,Weekend,Tram,421900
+3380,2024,3,Mar,Sunday,Weekend,Tram,304000
+3385,2024,3,Mar,Thursday,Normal Weekday,Tram,572350
+3390,2024,3,Mar,Tuesday,Normal Weekday,Tram,564500
+3395,2024,3,Mar,Wednesday,Normal Weekday,Tram,582900
+3400,2024,4,Apr,Friday,Normal Weekday,Tram,512800
+3405,2024,4,Apr,Friday,School Holiday Weekday,Tram,533100
+3410,2024,4,Apr,Monday,Normal Weekday,Tram,475750
+3415,2024,4,Apr,Monday,School Holiday Weekday,Tram,497250
+3420,2024,4,Apr,Saturday,Weekend,Tram,479500
+3425,2024,4,Apr,Sunday,Weekend,Tram,333700
+3430,2024,4,Apr,Thursday,Normal Weekday,Tram,552900
+3435,2024,4,Apr,Thursday,School Holiday Weekday,Tram,558550
+3440,2024,4,Apr,Tuesday,Normal Weekday,Tram,532300
+3445,2024,4,Apr,Tuesday,School Holiday Weekday,Tram,498300
+3450,2024,4,Apr,Wednesday,Normal Weekday,Tram,554300
+3455,2024,4,Apr,Wednesday,School Holiday Weekday,Tram,542050
+3460,2024,5,May,Friday,Normal Weekday,Tram,481350
+3465,2024,5,May,Monday,Normal Weekday,Tram,439300
+3470,2024,5,May,Saturday,Weekend,Tram,400800
+3475,2024,5,May,Sunday,Weekend,Tram,278300
+3480,2024,5,May,Thursday,Normal Weekday,Tram,508300
+3485,2024,5,May,Tuesday,Normal Weekday,Tram,487500
+3490,2024,5,May,Wednesday,Normal Weekday,Tram,508550
+3495,2024,6,Jun,Friday,Normal Weekday,Tram,442750
+3500,2024,6,Jun,Monday,Normal Weekday,Tram,403150
+3505,2024,6,Jun,Saturday,Weekend,Tram,349950
+3510,2024,6,Jun,Sunday,Weekend,Tram,246350
+3515,2024,6,Jun,Thursday,Normal Weekday,Tram,463500
+3520,2024,6,Jun,Tuesday,Normal Weekday,Tram,443050
+3525,2024,6,Jun,Wednesday,Normal Weekday,Tram,459900
+3530,2024,7,Jul,Friday,Normal Weekday,Tram,481800
+3535,2024,7,Jul,Friday,School Holiday Weekday,Tram,446950
+3540,2024,7,Jul,Monday,Normal Weekday,Tram,432400
+3545,2024,7,Jul,Monday,School Holiday Weekday,Tram,394500
+3550,2024,7,Jul,Saturday,Weekend,Tram,350900
+3555,2024,7,Jul,Sunday,Weekend,Tram,251600
+3560,2024,7,Jul,Thursday,Normal Weekday,Tram,502600
+3565,2024,7,Jul,Thursday,School Holiday Weekday,Tram,455200
+3570,2024,7,Jul,Tuesday,Normal Weekday,Tram,490650
+3575,2024,7,Jul,Tuesday,School Holiday Weekday,Tram,421200
+3580,2024,7,Jul,Wednesday,Normal Weekday,Tram,503900
+3585,2024,7,Jul,Wednesday,School Holiday Weekday,Tram,462200
+3590,2024,8,Aug,Friday,Normal Weekday,Tram,484100
+3595,2024,8,Aug,Monday,Normal Weekday,Tram,450200
+3600,2024,8,Aug,Saturday,Weekend,Tram,373200
+3605,2024,8,Aug,Sunday,Weekend,Tram,276250
+3610,2024,8,Aug,Thursday,Normal Weekday,Tram,507150
+3615,2024,8,Aug,Tuesday,Normal Weekday,Tram,494950
+3620,2024,8,Aug,Wednesday,Normal Weekday,Tram,501750
+3625,2024,9,Sep,Friday,Normal Weekday,Tram,438800
+3630,2024,9,Sep,Monday,Normal Weekday,Tram,394900
+3635,2024,9,Sep,Monday,School Holiday Weekday,Tram,440850
+3640,2024,9,Sep,Saturday,Weekend,Tram,323300
+3645,2024,9,Sep,Sunday,Weekend,Tram,220750
+3650,2024,9,Sep,Thursday,Normal Weekday,Tram,453750
+3655,2024,9,Sep,Thursday,School Holiday Weekday,Tram,507000
+3660,2024,9,Sep,Tuesday,Normal Weekday,Tram,469750
+3665,2024,9,Sep,Tuesday,School Holiday Weekday,Tram,503000
+3670,2024,9,Sep,Wednesday,Normal Weekday,Tram,451150
+3675,2024,9,Sep,Wednesday,School Holiday Weekday,Tram,463650
+3680,2024,10,Oct,Friday,Normal Weekday,Tram,499750
+3685,2024,10,Oct,Friday,School Holiday Weekday,Tram,470900
+3690,2024,10,Oct,Monday,Normal Weekday,Tram,472350
+3695,2024,10,Oct,Saturday,Weekend,Tram,401650
+3700,2024,10,Oct,Sunday,Weekend,Tram,274150
+3705,2024,10,Oct,Thursday,Normal Weekday,Tram,542150
+3710,2024,10,Oct,Thursday,School Holiday Weekday,Tram,523500
+3715,2024,10,Oct,Tuesday,Normal Weekday,Tram,530200
+3720,2024,10,Oct,Tuesday,School Holiday Weekday,Tram,489550
+3725,2024,10,Oct,Wednesday,Normal Weekday,Tram,550400
+3730,2024,10,Oct,Wednesday,School Holiday Weekday,Tram,508650
+3735,2024,11,Nov,Friday,Normal Weekday,Tram,522850
+3740,2024,11,Nov,Monday,Normal Weekday,Tram,460500
+3745,2024,11,Nov,Saturday,Weekend,Tram,377900
+3750,2024,11,Nov,Sunday,Weekend,Tram,259700
+3755,2024,11,Nov,Thursday,Normal Weekday,Tram,546500
+3760,2024,11,Nov,Tuesday,Normal Weekday,Tram,544050
+3765,2024,11,Nov,Wednesday,Normal Weekday,Tram,527700
+3770,2024,12,Dec,Friday,Normal Weekday,Tram,543950
+3775,2024,12,Dec,Friday,School Holiday Weekday,Tram,353000
+3780,2024,12,Dec,Monday,Normal Weekday,Tram,449800
+3785,2024,12,Dec,Monday,School Holiday Weekday,Tram,351350
+3790,2024,12,Dec,Saturday,Weekend,Tram,402850
+3795,2024,12,Dec,Sunday,Weekend,Tram,310400
+3800,2024,12,Dec,Thursday,Normal Weekday,Tram,569350
+3805,2024,12,Dec,Tuesday,Normal Weekday,Tram,543500
+3810,2024,12,Dec,Tuesday,School Holiday Weekday,Tram,282600
+3815,2024,12,Dec,Wednesday,Normal Weekday,Tram,566950
+3820,2025,1,Jan,Friday,Normal Weekday,Tram,471700
+3825,2025,1,Jan,Friday,School Holiday Weekday,Tram,427000
+3830,2025,1,Jan,Monday,School Holiday Weekday,Tram,400600
+3835,2025,1,Jan,Saturday,Weekend,Tram,404850
+3840,2025,1,Jan,Sunday,Weekend,Tram,288200
+3845,2025,1,Jan,Thursday,Normal Weekday,Tram,485000
+3850,2025,1,Jan,Thursday,School Holiday Weekday,Tram,449050
+3855,2025,1,Jan,Tuesday,School Holiday Weekday,Tram,463600
+3860,2025,1,Jan,Wednesday,Normal Weekday,Tram,470650
+3865,2025,1,Jan,Wednesday,School Holiday Weekday,Tram,469200
+3870,2025,2,Feb,Friday,Normal Weekday,Tram,492550
+3875,2025,2,Feb,Monday,Normal Weekday,Tram,442850
+3880,2025,2,Feb,Saturday,Weekend,Tram,475350
+3885,2025,2,Feb,Sunday,Weekend,Tram,342250
+3890,2025,2,Feb,Thursday,Normal Weekday,Tram,508850
+3895,2025,2,Feb,Tuesday,Normal Weekday,Tram,496600
+3900,2025,2,Feb,Wednesday,Normal Weekday,Tram,506300
+3905,2025,3,Mar,Friday,Normal Weekday,Tram,519800
+3910,2025,3,Mar,Monday,Normal Weekday,Tram,490350
+3915,2025,3,Mar,Saturday,Weekend,Tram,527700
+3920,2025,3,Mar,Sunday,Weekend,Tram,361850
+3925,2025,3,Mar,Thursday,Normal Weekday,Tram,552550
+3930,2025,3,Mar,Tuesday,Normal Weekday,Tram,543100
+3935,2025,3,Mar,Wednesday,Normal Weekday,Tram,547700
+3940,2025,4,Apr,Friday,Normal Weekday,Tram,500400
+3945,2025,4,Apr,Friday,School Holiday Weekday,Tram,511950
+3950,2025,4,Apr,Monday,Normal Weekday,Tram,458050
+3955,2025,4,Apr,Monday,School Holiday Weekday,Tram,465150
+3960,2025,4,Apr,Saturday,Weekend,Tram,454000
+3965,2025,4,Apr,Sunday,Weekend,Tram,321350
+3970,2025,4,Apr,Thursday,Normal Weekday,Tram,511900
+3975,2025,4,Apr,Thursday,School Holiday Weekday,Tram,534000
+3980,2025,4,Apr,Tuesday,Normal Weekday,Tram,488100
+3985,2025,4,Apr,Tuesday,School Holiday Weekday,Tram,540650
+3990,2025,4,Apr,Wednesday,Normal Weekday,Tram,512100
+3995,2025,4,Apr,Wednesday,School Holiday Weekday,Tram,544850
+4000,2025,5,May,Friday,Normal Weekday,Tram,484400
+4005,2025,5,May,Monday,Normal Weekday,Tram,445300
+4010,2025,5,May,Saturday,Weekend,Tram,456550
+4015,2025,5,May,Sunday,Weekend,Tram,338750
+4020,2025,5,May,Thursday,Normal Weekday,Tram,517950
+4025,2025,5,May,Tuesday,Normal Weekday,Tram,499650
+4030,2025,5,May,Wednesday,Normal Weekday,Tram,503650
+4035,2025,6,Jun,Friday,Normal Weekday,Tram,420650
+4040,2025,6,Jun,Monday,Normal Weekday,Tram,387000
+4045,2025,6,Jun,Saturday,Weekend,Tram,391500
+4050,2025,6,Jun,Sunday,Weekend,Tram,284900
+4055,2025,6,Jun,Thursday,Normal Weekday,Tram,466150
+4060,2025,6,Jun,Tuesday,Normal Weekday,Tram,433000
+4065,2025,6,Jun,Wednesday,Normal Weekday,Tram,448550
