@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <title>Melbourne Tram – Map & Day-Type Chart</title>
+
+  <!-- Vega stack -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <style>
+    body{margin:0;padding:30px;background:#fafcff;font-family:Lato,Arial,sans-serif}
+    .vis{max-width:850px;margin:0 auto 60px}
+    h2{color:#2977d2;margin:.3em 0}
+    .caption{color:#555;text-align:center;font-size:1.05em;margin-top:.7em}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Riding Through the City: Melbourne’s Tram Network and Commuter Patterns</h1>
+
+    <!-- Introductory section -->
+    <section class="intro-section">
+      <div class="intro-container">
+        <!-- Left: Introductory text -->
+        <div class="intro-text">
+          <p class="intro">
+            Melbourne’s tram network is more than just a mode of transport, it’s a symbol 
+            of the city’s rhythm and daily life. Stretching across hundreds of kilometres, 
+            it connects suburbs, workplaces, and cultural hubs, shaping how millions of 
+            journeys unfold each year.
+            <br><br>
+            This visualisation explores the heartbeat of Melbourne’s trams, revealing how 
+            routes spread across the city, how passenger volumes rise and fall across weekdays 
+            and weekends, and how travel behaviour shifts over time. Use the interactive charts 
+            below to uncover patterns that define Melbourne’s commuting culture.
+          </p>
+        </div>
+        <!-- Right: images -->
+        <div class="intro-image">
+          <img src="https://raw.githubusercontent.com/jken0043/3179/refs/heads/main/tram_exterior.jpg" alt="Melbourne tram exterior">
+          <img src="https://github.com/jken0043/3179/blob/main/tram_interior.jpg?raw=true" alt="Melbourne tram interior">
+        </div>
+      </div>
+    </section>
+
+    <section class="data-overview">
+      <h2>Data Overview</h2>
+      <p class="overview-text">
+        The dataset records daily tram passenger volumes across multiple years,
+        distinguishing between weekdays, weekends, and school holidays. These summaries
+        highlight overall travel patterns before exploring the interactive visuals below.
+      </p>
+
+      <div class="overview-cards">
+        <div class="card">
+          <h3>Weekday vs Weekend Travel</h3>
+          <p>
+            Normal weekdays see the highest passenger activity,
+            averaging around 650,000 daily boardings, nearly double that of weekends.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Yearly Passenger Trends</h3>
+          <p>
+            Tram patronage steadily increased from 2018 to 2019,
+            before declining during pandemic-affected years in 2020–2021.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Seasonal Variation</h3>
+          <p>
+            Passenger volumes peak in March and October, with lighter activity
+            observed during winter and major school holidays.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spacer / Divider Section -->
+    <section class="spacer-section"></section>
+
+    <!-- 1. Tram Network Map Section -->
+    <section class="map-section">
+      <h2 class="chart-title">Melbourne City Tram Network Over Street Map</h2>
+      <p class="chart-subtitle">
+        <em>
+          Explore the complete layout of Melbourne’s tram network, with interactive zoom to view routes
+        across the city’s inner and outer suburbs.
+        </em>
+      </p>
+
+      <div class="chart-wrapper center-layout">
+        <div id="map"></div>
+      </div>
+
+      <div class="map-text">
+        <p class="caption">
+          <span style="color:#888">Grey = Melbourne city outline</span> |
+          <span style="color:#ff9800"><b>Orange = Tram lines</b></span>
+        </p>
+        <p>
+          Melbourne’s tram network weaves through the city like a living grid, linking neighbourhoods,
+          workplaces, and cultural hubs across the metropolitan landscape. This map visualises the full
+          reach of that network, with <strong>orange lines</strong> tracing the tram routes that define daily
+          movement, and the <strong>grey background</strong> revealing the city’s intricate street structure.
+          Together, they provide a spatial snapshot of how public transport integrates with the urban fabric,
+          highlighting both the density of the inner network and its gradual thinning toward the outer suburbs.
+        </p>
+
+        <p>
+          The concentration of tram lines in the <strong>Central Business District</strong> and inner suburbs
+          underscores how these areas act as the core of commuter activity, serving as the main interchange points
+          between residential zones, workplaces, and cultural destinations. Further out, the reduced density of
+          routes reflects lower passenger demand and greater reliance on alternative transport modes such as buses
+          or trains.
+        </p>
+
+        <p>
+          This spatial pattern demonstrates how Melbourne’s trams not only provide efficient local connectivity
+          but also mirror the city’s historical growth. Early tram lines were designed to radiate outward from the
+          city centre, shaping the urban sprawl and accessibility patterns still visible today. Even after more than
+          a century of operation, the network remains one of the world’s most extensive, connecting communities and
+          sustaining Melbourne’s reputation as a city built on movement and accessibility.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- 2. Average Passenger Volume Bar Chart Section -->
+    <section class="bar-section">
+      <h2 class="chart-title">Average Tram Passenger Volume by Day Type</h2>
+      <p class="chart-subtitle">
+        <em>
+          Use the controls below to explore how weekday, weekend, and school holiday travel
+        patterns vary across months and years.
+        </em>
+      </p>
+
+      <div class="chart-wrapper center-layout">
+        <div id="bars"></div>
+      </div>
+
+      <div class="bar-text">
+        <p>
+          This bar chart visualises <strong>average daily tram passenger volumes</strong> across three distinct day types:
+          <em>normal weekdays</em>, <em>school holiday weekdays</em>, and <em>weekends</em>.  
+          Use the interactive <strong>year</strong> and <strong>month</strong> controls below to explore how these values change
+          over time and to uncover seasonal or pandemic-related shifts in travel behaviour.
+        </p>
+
+        <p>
+          The data highlights how <strong>weekday commuting patterns</strong> shape the rhythm of Melbourne’s tram network.
+          Passenger counts peak during standard work weeks, reflecting the system’s crucial role in connecting residents to offices,
+          universities, and city workplaces. In contrast, <em>school holiday periods</em> show noticeable reductions,
+          particularly in areas around education hubs, revealing how strongly student travel contributes to weekday volumes.
+        </p>
+
+        <p>
+          <strong>Weekend travel</strong> consistently records the lowest usage, illustrating the shift from routine commuting
+          to recreational and social activities. Yet even here, subtle fluctuations emerge during warmer months or special events,
+          when Melburnians turn to trams for leisure trips across the CBD and inner suburbs. Together, these patterns demonstrate
+          how tram patronage mirrors the city’s work–life cycle, oscillating between productivity, education, and recreation.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- 3. Monthly Passenger Trend Line Chart -->
+    <section class="line-section">
+      <h2 class="chart-title">Monthly Passenger Trend by Day Type</h2>
+      <p class="chart-subtitle">
+        <em>
+          Drag the slider below to explore how passenger trends fluctuate across different years.
+        </em>
+      </p>
+      <div class="chart-wrapper center-layout">
+        <div id="trend"></div>
+      </div>
+
+      <div class="line-text">
+        <p>
+          This line chart visualises how <strong>average tram passenger numbers</strong> fluctuate throughout the year, 
+          segmented by <em>day type</em>. Each line represents a distinct pattern of urban mobility, from the surge 
+          of normal weekday commuters to the more relaxed flows seen during school holidays and weekends. 
+          By observing these lines together, we can trace the rhythm of Melbourne’s public transport system as it responds 
+          to the city’s social and economic calendar.
+        </p>
+
+        <p>
+          The interactive <strong>slider control</strong> allows users to examine how <strong>seasonal trends</strong>, 
+          <strong>public holidays</strong>, and <strong>school terms</strong> shape travel behaviour over time. 
+          Clear weekday peaks are visible at the start of each year, coinciding with the return to work and study periods, 
+          followed by noticeable dips during winter and mid-year breaks. 
+          Weekend travel, while lower in volume, remains steady, reflecting consistent recreational and social mobility across all seasons.
+        </p>
+
+        <p>
+          Together, these patterns highlight how Melbourne’s trams adapt to the city’s evolving tempo, intensifying during 
+          busy commuter months and easing during quieter holiday stretches. The result is a visual pulse of daily life, 
+          showing how external factors such as education cycles, weather, and leisure activities intertwine to define 
+          the movement of people across the tram network.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- 4. Scatter Plot -->
+    <section class="scatter-section">
+      <h2 class="chart-title">Seasonal Travel Patterns by Day Type</h2>
+      <p class="chart-subtitle">
+        <em>
+          Use the slider and dropdown controls to explore how daily tram passenger volumes 
+        change across different months and years. This visual reveals the subtle rhythm of 
+        Melbourne’s public transport habits as seasons, holidays, and work cycles influence 
+        the city’s movement patterns.
+        </em>
+      </p>
+
+      <!-- White box ONLY for chart -->
+      <div class="chart-wrapper center-layout">
+        <div id="scatter-plot"></div>
+      </div>
+
+      <!-- Text below (outside box) -->
+      <div class="scatter-text">
+        <p>
+          This scatter plot visualises how <strong>average daily tram passenger numbers</strong> 
+          fluctuate throughout the year, grouped by <em>day type</em>. Each dot represents one 
+          day’s data point, colour-coded to distinguish <strong>normal weekdays</strong>, 
+          <strong>school holiday weekdays</strong>, and <strong>weekends</strong>. Together, these 
+          data points form a visual rhythm of Melbourne’s transport demand across the calendar year.
+        </p>
+
+        <p>
+          The distribution highlights clear <strong>weekday peaks</strong> in almost every month, 
+          reflecting the strong role of commuting in shaping tram usage. 
+          Passenger counts dip during <em>school holidays</em> as student and staff travel declines, 
+          particularly in mid-year and late-December periods. 
+          <strong>Weekends</strong>, shown in red, maintain consistently lower but stable numbers, 
+          illustrating the city’s gradual shift from work-based commuting to social and leisure travel.
+        </p>
+
+        <p>
+          Seasonal influences are also visible: warmer months such as <em>October</em> and 
+          <em>November</em> often show small rises in passenger volumes, possibly tied to 
+          outdoor events and tourism. Conversely, colder winter months bring lighter patronage, 
+          echoing broader seasonal travel trends in urban environments. 
+          Altogether, this visual demonstrates how tram patronage mirrors Melbourne’s 
+          <strong>seasonal cycles, school calendars, and lifestyle rhythms</strong>, 
+          capturing the pulse of a city constantly on the move.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. Donut Chart -->
+    <section class="donut-section">
+      <h2 class="chart-title">Most Used Transport Mode in Melbourne (All Years Combined)</h2>
+      <p class="chart-subtitle">
+        This donut chart compares the <strong>average passenger share</strong> across Melbourne’s four key 
+        transport modes; <em>Tram</em>, <em>Train</em>, <em>Bus</em>, and <em>Regional services</em> from 2018 to 2025. 
+        It reveals how different systems collectively sustain the city’s mobility and accessibility.
+      </p>
+
+      <!-- White box ONLY for the chart -->
+      <div class="chart-wrapper center-layout">
+        <div id="donut"></div>
+      </div>
+
+      <!-- Text below (outside the box) -->
+      <div class="donut-text">
+        <p>
+          This visual summarises the <strong>collective behaviour of commuters</strong> over multiple years, 
+          offering a snapshot of how Melbourne’s population distributes its travel across different transport systems. 
+          The largest share belongs to <strong>metropolitan trains,</strong> the backbone of the network, carrying 
+          high volumes of passengers along key corridors connecting the CBD with major growth suburbs such as 
+          Dandenong, Sunshine, and Werribee.
+        </p>
+
+        <p>
+          <strong>Trams</strong> form the second-largest segment, reflecting their dominance in the inner city, 
+          where short to medium-distance travel is most common. Their dense route coverage and frequent service 
+          make them a defining feature of Melbourne’s identity as one of the world’s great tram cities. 
+          Meanwhile, <strong>buses</strong> and <strong>regional services</strong> provide crucial coverage beyond 
+          the reach of fixed rail lines, linking neighbourhoods, outer suburbs, and regional towns to the city’s core.
+        </p>
+
+        <p>
+          These proportions highlight the <strong>interconnected nature of Melbourne’s transport ecosystem</strong>: 
+          trains handle large commuter volumes, trams ensure inner-city accessibility, and buses and regional lines 
+          bridge the geographical gaps. Together, they form a unified system that enables economic activity, 
+          social connection, and sustainable mobility across Greater Melbourne.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6. Heatmap -->
+    <section class="heatmap-section">
+      <h2 class="chart-title">Seasonal Passenger Intensity by Transport Mode</h2>
+      <p class="chart-subtitle">
+        This heatmap visualises how <strong>average daily passenger numbers</strong> 
+        shift throughout the year across different <strong>transport modes</strong> from 2018–2025.
+        Each coloured cell reflects a month’s relative passenger intensity — revealing
+        when each system is most active and how usage patterns evolve over time.
+      </p>
+      <p 
+        class="heatmap-caption">
+        <em>Use the slider below to view trends across different years.</em>
+      </p>
+      <!-- White card for heatmap + slider -->
+      <div class="chart-wrapper center-layout">
+        <div id="heatmap"></div>
+      </div>
+
+      <div class="heatmap-text">
+        <p>
+          The heatmap uncovers distinct <strong>seasonal rhythms</strong> within Melbourne’s
+          public transport network. <strong>Metropolitan trains</strong> and <strong>trams</strong> 
+          exhibit strong peaks in <strong>March</strong> and <strong>October,</strong> periods often linked to 
+          increased commuting and large-scale city events. 
+          Usage drops notably in <strong>winter months</strong> and during 
+          <strong>school holidays</strong>, when fewer people travel for work or study.
+        </p>
+
+        <p>
+          Meanwhile, <strong>buses</strong> and <strong>regional services</strong> maintain steadier 
+          year-round activity. These modes play a crucial role in linking 
+          outer suburbs and regional towns, where travel demand remains more 
+          consistent regardless of season. 
+          Overall, this view highlights how <strong>commuting culture and 
+          seasonal shifts</strong> shape the pulse of Melbourne’s transport system.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- References -->
+    <div class="vis">
+      <h2>References</h2>
+      <ul class="references">
+        <li>
+          <b>Images:</b>
+          <ul>
+            <li>
+              <a href="https://commons.wikimedia.org/wiki/File:B2-class_Melbourne_tram_interior,_2013.JPG" target="_blank">
+                Wikimedia Commons – B2-class Melbourne tram interior (2013)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.pexels.com/photo/railroad-tracks-in-city-258510/" target="_blank">
+                Pexels – Railroad Tracks in City (used for rails background)
+              </a>
+            </li>
+            <li>
+              <a href="https://www.visitmelbourne.com/practical-information/getting-here-and-around/public-transport" target="_blank">
+                Visit Melbourne – Public Transport Information
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <b>Tram lines:</b>
+          <a href="https://data.melbourne.vic.gov.au/explore/dataset/tram-tracks/information/" target="_blank">
+            City of Melbourne Open Data – Tram Tracks Dataset
+          </a>
+        </li>
+        <li>
+          <b>Tram user data:</b>
+          <a href="https://opendata.transport.vic.gov.au/dataset/monthly-average-patronage-by-day-type-and-by-mode/resource/d49915dc-98ac-45d1-afd8-3aea823ce292?filters=Mode%3ATram" target="_blank">
+            Victorian Government Open Data – Monthly Average Patronage by Mode
+          </a>
+        </li>
+        <li>
+          <b>Melbourne city map:</b>
+          <a href="https://overpass-turbo.eu/#" target="_blank">
+            OpenStreetMap / Overpass Turbo Export
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-credit">
+      Created by <strong>Julian Kennedy (34191216)</strong>
+    </footer>
+  </div>
+</body>
+
+
+<script>
+/* =============== ZOOMABLE MAP SPEC ===============*/
+const mapSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  /* --- fixed numeric size rather than "container" --- */
+  "width": 950,
+  "height": 650,
+
+  /* --- ensures consistent sizing and clipping behaviour --- */
+  "autosize": { "type": "fit", "contains": "padding" },
+  "padding": {"top": 0, "bottom": 0, "left": 0, "right": 0},
+
+  /* ---- Zoom Slider ---- */
+  "params": [
+    {
+      "name": "zoom",
+      "value": 400000,
+      "bind": {
+        "input": "range",
+        "min": 400000,
+        "max": 800000,
+        "step": 10000,
+        "name": "Zoom: ",
+        "debounce": 50
+      }
+    }
+  ],
+
+  "layer": [
+    /* ---- Light Ocean Background ---- */
+    {
+      "data": {"sphere": true},
+      "mark": {"type": "geoshape", "fill": "#f8f8f8"}
+    },
+
+    /* ---- Graticule Gridlines ---- */
+    {
+      "data": {"graticule": true},
+      "mark": {"type": "geoshape","stroke": "#d9d9d9","strokeWidth": 0.8}
+    },
+
+    /* ---- Melbourne City Boundary ---- */
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jken0043/3179/main/melbourne_city.json",
+        "format": {"type": "json"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f2f2f2",
+        "stroke": "#999",
+        "strokeWidth": 1.2
+      }
+    },
+
+    /* ---- Tram Lines ---- */
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jken0043/3179/main/tram-lines.json",
+        "format": {"type": "json","property": "features"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#ff9800",
+        "strokeWidth": 2,
+        "fill": null
+      }
+    },
+
+    /* ---- Caption ---- */
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "x": 20,
+        "y": 640,
+        "fontSize": 11,
+        "font": "Lato",
+        "color": "#777"
+      },
+      "data": {
+        "values": [
+          {"note": "Projection: Mercator | Approx. 2 km per grid square"}
+        ]
+      },
+      "encoding": {"text": {"field": "note"}}
+    }
+  ],
+
+  /* ---- Projection and Zoom ---- */
+  "projection": {
+    "type": "mercator",
+    "center": [144.9631, -37.8136],
+    "scale": {"expr": "zoom"},
+    "translate": [475, 325]   /* keep map fixed in frame */
+  },
+
+  "config": {"view": {"stroke": null}}
+};
+
+
+
+/* =================  DAY-TYPE BAR CHART  ================ */
+const barSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 600,
+  "autosize": { "type": "fit", "contains": "padding" },
+
+  /* ── interactive controls ── */
+  "params": [
+    {
+      "name": "yearSel",
+      "value": 2018,
+      "bind": { 
+        "input": "range",
+        "min": 2018, "max": 2025, "step": 1,
+        "name": "Year: "
+      }
+    },
+    {
+      "name": "monthSel",
+      "value": 1,
+      "bind": {
+        "input": "select",
+        "options": [1,2,3,4,5,6,7,8,9,10,11,12],
+        "labels": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        "name": "Month: "
+      }
+    }
+  ],
+
+  /* ── dataset ── */
+  "data": {
+    "url": "https://raw.githubusercontent.com/jken0043/3179/763cbecb78a05befb6cea9d52b3ad8d19d191eb2/d49915dc-98ac-45d1-afd8-3aea823ce292.csv",
+    "format": { "type": "csv" }
+  },
+
+  /* ── filters & calculations ── */
+  "transform": [
+    { "filter": "datum.Mode === 'Tram'" },
+    { "calculate": "toNumber(datum.Year)",  "as": "YearNum" },
+    { "calculate": "toNumber(datum.Month)", "as": "MonthNum" },
+    { "filter": "datum.YearNum == yearSel && datum.MonthNum == monthSel" }
+  ],
+
+  /* ── visual encoding ── */
+  "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 6,
+    "cornerRadiusTopRight": 6,
+    "stroke": null,
+    "strokeWidth": 0,
+    "size": 140
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Day_type",
+      "type": "nominal",
+      "title": "Day Type",
+      "sort": ["Normal Weekday","School Holiday Weekday","Weekend"],
+      "axis": { "labelAngle": 0, "labelFontSize": 12, "titleFontWeight": "bold" }
+    },
+    "y": {
+      "aggregate": "mean",            
+      "field": "Pax_daily",
+      "type": "quantitative",
+      "title": "Average Daily Passenger Count",
+      "axis": { "format": ",d", "titleFontWeight": "bold", "grid": false }
+    },
+    "color": {
+      "field": "Day_type",
+      "type": "nominal",
+      "title": "Day Type",            
+      "legend": {
+        "orient": "right",            
+        "titleFontWeight": "bold",
+        "labelFontSize": 12,
+        "titleFontSize": 13
+      },
+      "scale": {
+        "domain": ["Normal Weekday","School Holiday Weekday","Weekend"],
+        "range": ["#f9a825","#2196f3","#e53935"]
+      }
+    },
+
+    "tooltip": [
+      {"field": "Day_type", "title": "Day Type"},
+      {"field": "Pax_daily", "title": "Average Passengers", "format": ","},
+      {"field": "Year", "title": "Year"},
+      {"field": "Month_name", "title": "Month"}
+    ]
+  },
+
+  /* ── layout & style ── */
+  "title": {
+    "subtitle": "Use the controls below to explore different months and years",
+    "fontSize": 20,
+    "fontWeight": "bold",
+    "anchor": "start",
+    "color": "#1565c0"
+  },
+
+  "config": {
+    "view": { "stroke": null },
+    "axis": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    }
+  }
+};
+
+/* =================  MONTHLY LINE TREND CHART  ================ */
+const lineSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 400,
+  "autosize": { "type": "fit", "contains": "padding" },
+
+  /* ── interactive controls ── */
+  "params": [
+    {
+      "name": "yearSel",
+      "value": 2018,
+      "bind": { 
+        "input": "range",
+        "min": 2018, "max": 2025, "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+
+  /* ── dataset ── */
+  "data": {
+    "url": "https://raw.githubusercontent.com/jken0043/3179/c525f9820e94b547b0d90bb3f21b97edc4f84ef5/d49915dc-98ac-45d1-afd8-3aea823ce292.csv",
+    "format": { "type": "csv" }
+  },
+
+  /* ── filters & calculations ── */
+  "transform": [
+    { "filter": "datum.Mode === 'Tram'" },
+    { "calculate": "toNumber(datum.Year)",  "as": "YearNum" },
+    { "calculate": "toNumber(datum.Month)", "as": "MonthNum" },
+    { "filter": "datum.YearNum == yearSel" },
+    {
+      "aggregate": [
+        { "op": "mean", "field": "Pax_daily", "as": "Avg_Pax" }
+      ],
+      "groupby": ["YearNum", "MonthNum", "Day_type"]
+    }
+  ],
+
+  /* ── visual encoding ── */
+  "mark": {
+    "type": "line",
+    "point": true,
+    "strokeWidth": 2.5
+  },
+
+  "encoding": {
+    "x": {
+      "field": "MonthNum",
+      "type": "ordinal",
+      "title": "Month",
+      "axis": {
+        "values": [1,2,3,4,5,6,7,8,9,10,11,12],
+        "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.value - 1]",
+        "labelFontSize": 12,
+        "titleFontWeight": "bold"
+      }
+    },
+    "y": {
+      "field": "Avg_Pax",
+      "type": "quantitative",
+      "title": "Average Daily Passengers",
+      "axis": { "format": ",d", "titleFontWeight": "bold", "grid": false }
+    },
+    "color": {
+      "field": "Day_type",
+      "type": "nominal",
+      "title": "Day Type",
+      "scale": {
+        "domain": ["Normal Weekday","School Holiday Weekday","Weekend"],
+        "range": ["#f9a825","#2196f3","#e53935"]
+      }
+    },
+    "tooltip": [
+      { "field": "Day_type", "title": "Day Type" },
+      { "field": "YearNum", "title": "Year" },
+      { "field": "Avg_Pax", "title": "Average Passengers", "format": "," }
+    ]
+  },
+
+  /* ── layout & style ── */
+  "title": {
+    "subtitle": "Drag the slider to explore monthly passenger trends for each year",
+    "fontSize": 20,
+    "fontWeight": "bold",
+    "anchor": "start",
+    "color": "#1565c0"
+  },
+
+  "config": {
+    "view": { "stroke": null },
+    "axis": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    }
+  }
+};
+
+/* =================  SCATTER PLOT: DAILY PASSENGER DISTRIBUTION  ================ */
+const scatterSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 500,
+  "autosize": { "type": "fit", "contains": "padding" },
+
+  /* ── interactive controls ── */
+  "params": [
+    {
+      "name": "yearSel",
+      "value": 2018,
+      "bind": { 
+        "input": "range",
+        "min": 2018, "max": 2025, "step": 1,
+        "name": "Year: ",
+        "debounce": 50
+      }
+    },
+    {
+      "name": "daySel",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "Normal Weekday", "School Holiday Weekday", "Weekend"],
+        "name": "Day Type: "
+      }
+    }
+  ],
+
+  /* ── dataset ── */
+  "data": {
+    "url": "https://raw.githubusercontent.com/jken0043/3179/c525f9820e94b547b0d90bb3f21b97edc4f84ef5/d49915dc-98ac-45d1-afd8-3aea823ce292.csv",
+    "format": { "type": "csv" }
+  },
+
+  /* ── filters & calculations ── */
+  "transform": [
+    { "filter": "datum.Mode === 'Tram'" },
+    { "calculate": "toNumber(datum.Year)",  "as": "YearNum" },
+    { "calculate": "toNumber(datum.Month)", "as": "MonthNum" },
+    { "filter": "datum.YearNum == yearSel" },
+    { "filter": "daySel == 'All' || datum.Day_type == daySel" }
+  ],
+
+  /* ── visual encoding ── */
+  "mark": {
+    "type": "point",
+    "filled": true,
+    "opacity": 0.7,
+    "size": 100
+  },
+
+  "encoding": {
+    "x": {
+      "field": "MonthNum",
+      "type": "ordinal",
+      "title": "Month",
+      "axis": {
+        "values": [1,2,3,4,5,6,7,8,9,10,11,12],
+        "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.value - 1]",
+        "labelFontSize": 12,
+        "titleFontWeight": "bold"
+      }
+    },
+    "y": {
+      "field": "Pax_daily",
+      "type": "quantitative",
+      "title": "Daily Tram Passengers",
+      "axis": { "format": ",d", "titleFontWeight": "bold", "grid": false }
+    },
+    "color": {
+      "field": "Day_type",
+      "type": "nominal",
+      "title": "Day Type",
+      "scale": {
+        "domain": ["Normal Weekday","School Holiday Weekday","Weekend"],
+        "range": ["#f9a825","#2196f3","#e53935"]
+      }
+    },
+    "tooltip": [
+      { "field": "Day_type", "title": "Day Type" },
+      { "field": "YearNum", "title": "Year" },
+      { "field": "MonthNum", "title": "Month" },
+      { "field": "Pax_daily", "title": "Passengers", "format": "," }
+    ]
+  },
+
+  "config": {
+    "view": { "stroke": null },
+    "axis": {
+      "labelFont": "Lato",
+      "titleFont": "Lato"
+    }
+  }
+};
+
+/* =================  DONUT CHART  ================ */
+const donutSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,              // increased from 'container'
+  "height": 550,             // taller to enlarge donut
+  "autosize": {"type": "fit", "contains": "padding"},
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/jken0043/3179/refs/heads/main/all_montly_average_daytype_mode.csv",
+    "format": {"type": "csv"}
+  },
+
+  "transform": [
+    {
+      "calculate": "toNumber(replace(datum.Pax_daily || '0', ',', ''))",
+      "as": "PaxNum"
+    },
+    {"filter": "isValid(datum.PaxNum) && datum.PaxNum > 0"},
+    {
+      "aggregate": [
+        {"op": "mean", "field": "PaxNum", "as": "AvgPax"}
+      ],
+      "groupby": ["Mode"]
+    },
+    {
+      "joinaggregate": [
+        {"op": "sum", "field": "AvgPax", "as": "TotalAvg"}
+      ]
+    },
+    {"calculate": "datum.AvgPax / datum.TotalAvg", "as": "Share"}
+  ],
+
+  /* ==== Bigger donut shape ==== */
+  "mark": {
+    "type": "arc",
+    "innerRadius": 120,   
+    "outerRadius": 200    
+  },
+
+  "encoding": {
+    "theta": {"field": "Share", "type": "quantitative"},
+    "color": {
+      "field": "Mode",
+      "type": "nominal",
+      "title": "Transport Mode",
+      "scale": {
+        "range": ["#f9a825", "#1565c0", "#43a047", "#8e24aa", "#e53935"]
+      },
+      /* ==== Enlarged legend ==== */
+      "legend": {
+        "title": "Transport Mode",
+        "orient": "right",
+        "labelFontSize": 14,
+        "titleFontSize": 16,
+        "symbolSize": 200,    
+        "offset": 20,
+        "titleFontWeight": "bold"
+      }
+    },
+    "tooltip": [
+      {"field": "Mode", "title": "Transport Mode"},
+      {"field": "AvgPax", "title": "Average Passengers", "format": ","},
+      {"field": "Share", "title": "Share", "format": ".1%"}
+    ]
+  },
+
+  /* ==== Config for font & spacing ==== */
+  "config": {
+    "view": {"stroke": null},
+    "title": {"font": "Playfair Display", "fontSize": 20, "anchor": "start"},
+    "axis": {"labelFontSize": 12, "titleFontSize": 14},
+    "legend": {"labelFont": "Lato", "titleFont": "Playfair Display"}
+  }
+};
+
+/* =================  HEAT MAP  ================ */
+const heatmapSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 500,  
+  "padding": {"top": 10, "right": 0, "left": 2, "bottom": 10}, // tighter fit
+  "autosize": {"type": "fit", "contains": "padding"},
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/jken0043/3179/refs/heads/main/all_montly_average_daytype_mode.csv",
+    "format": {"type": "csv"}
+  },
+
+  "params": [
+    {
+      "name": "yearSel",
+      "value": 2018,
+      "bind": {
+        "input": "range",
+        "min": 2018,
+        "max": 2025,
+        "step": 1,
+        "name": "Year: ",
+        "debounce": 50
+      }
+    }
+  ],
+
+  "transform": [
+    {
+      "calculate": "toNumber(replace(datum.Pax_daily || '0', ',', ''))",
+      "as": "PaxNum"
+    },
+    {"filter": "isValid(datum.PaxNum) && datum.PaxNum > 0"},
+    {"calculate": "toNumber(datum.Year)", "as": "YearNum"},
+    {"filter": "datum.YearNum == yearSel"},
+    {
+      "aggregate": [
+        {"op": "mean", "field": "PaxNum", "as": "AvgPax"}
+      ],
+      "groupby": ["YearNum", "Mode", "Month_name"]
+    }
+  ],
+
+  "mark": {
+    "type": "rect",
+    "stroke": "#ffffff",
+    "strokeWidth": 0.5
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Month_name",
+      "type": "ordinal",
+      "title": "Month",
+      "sort": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+      "axis": {
+        "labelAngle": 0,
+        "labelFontSize": 12,
+        "titleFontSize": 13,
+        "labelPadding": 5
+      }
+    },
+    "y": {
+      "field": "Mode",
+      "type": "nominal",
+      "title": "Transport Mode",
+      "axis": {
+        "labelFontWeight": "bold",
+        "titleFontSize": 13,
+        "labelFontSize": 12
+      }
+    },
+    "color": {
+      "field": "AvgPax",
+      "type": "quantitative",
+      "title": "Average Daily Passengers",
+      "scale": {
+        "range": ["#2166ac", "#f7f7f7", "#b2182b"]
+      },
+      "legend": {
+        "titleFontSize": 13,
+        "labelFontSize": 12,
+        "orient": "right"
+      }
+    },
+    "tooltip": [
+      {"field": "YearNum", "title": "Year"},
+      {"field": "Mode", "title": "Mode"},
+      {"field": "Month_name", "title": "Month"},
+      {"field": "AvgPax", "title": "Average Passengers", "format": ","}
+    ]
+  },
+
+  "config": {
+    "view": {"stroke": null, "continuousWidth": 400, "continuousHeight": 300},
+    "axis": {"titleFont": "Playfair Display", "labelFont": "Lato"},
+    "legend": {"titleFont": "Playfair Display", "labelFont": "Lato"}
+  }
+};
+
+/* embed all charts */
+vegaEmbed("#map",  mapSpec, {actions:false});
+vegaEmbed("#bars", barSpec, {actions:false});
+vegaEmbed("#trend", lineSpec, {actions:false});
+vegaEmbed("#scatter-plot", scatterSpec, {actions:false});
+vegaEmbed("#donut", donutSpec, {actions:false});
+vegaEmbed("#heatmap", heatmapSpec, {actions:false});
+</script>
+</body>
+</html>
